@@ -13,7 +13,7 @@
   ],
   "scripts": {
     "watch": "nodemon --config nodemon.json",
-    "build": "sh -c '[ -d dist ] && rm -R dist' && tsc --build tsconfig.prod.json",
+    "build": "tsc --build tsconfig.prod.json",
     "prepublishOnly": "pnpm build",
     "release": "pnpm publish --access public",
     "test": "jest",
