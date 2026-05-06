@@ -1,6 +1,6 @@
 {
   "name": "azure-blob-wrapper",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Wrapper for @azure/storage-blob",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -24,9 +24,7 @@
   "dependencies": {
     "@azure/core-auth": "^1.10.1",
     "@azure/core-paging": "^1.6.2",
-    "@azure/storage-blob": "^12.24.0",
-    "dotenv": "^16.4.5",
-    "list-data-reader": "github:moxalibudbud/list-data-reader#main"
+    "@azure/storage-blob": "^12.24.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.24.8",
