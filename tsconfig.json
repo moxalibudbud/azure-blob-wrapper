@@ -13,16 +13,20 @@
     "strict": true,
     "target": "es6",
     "moduleResolution": "node",
-    "types": [
-      "node"
-    ],
-    "typeRoots": [
-      "node_modules/@types"
-    ]
+    "types": ["node"],
+    "typeRoots": ["node_modules/@types"]
   },
   "include": [
-    "src/**/*.ts"
-, "todo/blob-client.ts", "todo/blob-line-reader.ts", "todo/block-blob-client.ts", "todo/container.ts", "todo/enums.ts", "todo/service-client.ts", "todo/types.ts", "todo/blob.ts"  ],
+    "src/**/*.ts",
+    "todo/blob-client.ts",
+    "todo/blob-line-reader.ts",
+    "todo/block-blob-client.ts",
+    "todo/container.ts",
+    "todo/enums.ts",
+    "todo/service-client.ts",
+    "src/types.ts",
+    "todo/blob.ts"
+  ],
   "exclude": [],
   "ts-node": {
     // Do not forget to `npm i -D tsconfig-paths`
