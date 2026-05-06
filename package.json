@@ -1,17 +1,21 @@
 {
-  "name": "altavant-azure-blob",
+  "name": "azure-blob-wrapper",
   "version": "0.0.1",
-  "description": "Extended functionality of @azure/storage-blob",
+  "description": "Wrapper for @azure/storage-blob",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {
     ".": "./dist/index.js",
     "./enums": "./dist/enums.js"
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "watch": "nodemon --config nodemon.json",
     "build": "sh -c '[ -d dist ] && rm -R dist' && tsc --build tsconfig.prod.json",
-    "push": "pnpm build && git add . && git commit -m 'build' && git push",
+    "prepublishOnly": "pnpm build",
+    "release": "pnpm publish --access public",
     "test": "jest",
     "test:prod": "jest --testPathPattern=dist/tests --detectOpenHandles",
     "test:dev": "jest --testPathPattern=src/tests --detectOpenHandles",
