@@ -18,10 +18,11 @@
     "updatemods": "pnpm up @alshaya/list-data-reader --latest"
   },
   "dependencies": {
+    "@azure/core-auth": "^1.10.1",
     "@azure/core-paging": "^1.6.2",
     "@azure/storage-blob": "^12.24.0",
-    "list-data-reader": "github:moxalibudbud/list-data-reader#main",
-    "dotenv": "^16.4.5"
+    "dotenv": "^16.4.5",
+    "list-data-reader": "github:moxalibudbud/list-data-reader#main"
   },
   "devDependencies": {
     "@babel/cli": "^7.24.8",
