@@ -18,9 +18,9 @@
   },
   "include": [
     "src/**/*.ts",
-    "todo/blob-client.ts",
+    "src/blob-client.ts",
     "todo/blob-line-reader.ts",
-    "todo/block-blob-client.ts",
+    "src/block-blob-client.ts",
     "todo/container.ts",
     "todo/enums.ts",
     "todo/service-client.ts",
