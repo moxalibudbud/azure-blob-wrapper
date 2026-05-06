@@ -10,7 +10,7 @@ pids
 *.pid.lock
 
 # Build folder
-/dist/tests
+/dist
 
 # Dependency directories
 node_modules/
