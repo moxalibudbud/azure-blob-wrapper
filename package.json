@@ -1,6 +1,6 @@
 {
   "name": "azure-blob-wrapper",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Wrapper for @azure/storage-blob",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
