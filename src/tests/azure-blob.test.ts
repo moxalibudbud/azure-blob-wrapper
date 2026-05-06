@@ -1,6 +1,6 @@
 import { test, expect, describe, beforeEach } from '@jest/globals';
 import { BlobServiceClient, ContainerClient, StorageSharedKeyCredential } from '@azure/storage-blob';
-import { AzureBlobContainers } from '../enums';
+import { AzureBlobContainers } from '../../todo/enums';
 
 describe('Azure Blob Storage library tests', () => {
   let ServiceClientModule: any;
@@ -9,7 +9,7 @@ describe('Azure Blob Storage library tests', () => {
     process.env.AZURE_BLOB_STORAGE_ACCOUNT_NAME = 'testaccount';
     process.env.AZURE_BLOB_STORAGE_ACCOUNT_KEY = 'xJ/JhgA6Fq000x06IvHPZ47j7v00000/Y7XGDEHO8ra1ZCMXNkf2CkLPjZ36hQR80sHA1xZ/FpOA+AStP9bJXX==';
 
-    ServiceClientModule = await import('../service-client');
+    ServiceClientModule = await import('../../todo/service-client');
   });
   
   test('Service Client should pass with arguments', () => {
@@ -32,7 +32,7 @@ describe('Azure Blob Storage library tests', () => {
   });
 
   test('Container object should pass correct property instances ', async () => {
-    const { Container } = await import('../container');
+    const { Container } = await import('../../todo/container');
     const containerClient = new Container(AzureBlobContainers.SIOCS_SOH);
     expect(containerClient.serviceClient).toBeInstanceOf(BlobServiceClient);
     expect(containerClient.containerClient).toBeInstanceOf(ContainerClient);

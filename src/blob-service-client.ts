@@ -1,5 +1,5 @@
 import { BlobServiceClient, StorageSharedKeyCredential } from '@azure/storage-blob';
-import { BlobServiceAuth } from './types';
+import { BlobServiceAuth } from '../todo/types';
 
 export function createServiceClient(auth: BlobServiceAuth): BlobServiceClient {
   return createBlobServiceClient(auth);

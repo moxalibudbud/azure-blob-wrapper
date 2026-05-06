@@ -1,4 +1,4 @@
-import { BlobLineReader } from '../blob-line-reader';
+import { BlobLineReader } from '../../todo/blob-line-reader';
 
 export class OutFileETL extends BlobLineReader {
 

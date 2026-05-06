@@ -11,7 +11,7 @@ describe('Azure Blob Line Reader tests', () => {
     process.env.AZURE_BLOB_STORAGE_ACCOUNT_NAME = 'testaccount';
     process.env.AZURE_BLOB_STORAGE_ACCOUNT_KEY = 'xJ/JhgA6Fq000x06IvHPZ47j7v00000/Y7XGDEHO8ra1ZCMXNkf2CkLPjZ36hQR80sHA1xZ/FpOA+AStP9bJXX==';
   
-    const { BlobLineReader } = await import('../blob-line-reader');
+    const { BlobLineReader } = await import('../../todo/blob-line-reader');
   
     class MockReader extends BlobLineReader {
       constructor() {

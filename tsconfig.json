@@ -22,7 +22,7 @@
   },
   "include": [
     "src/**/*.ts"
-  ],
+, "todo/blob-client.ts", "todo/blob-line-reader.ts", "todo/block-blob-client.ts", "todo/container.ts", "todo/enums.ts", "todo/service-client.ts", "todo/types.ts", "todo/blob.ts"  ],
   "exclude": [],
   "ts-node": {
     // Do not forget to `npm i -D tsconfig-paths`

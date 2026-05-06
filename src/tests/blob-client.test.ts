@@ -8,7 +8,7 @@ describe('Blob tests', () => {
   });
 
   test('blob.blobClient must instance of BlobClient', async () => {
-    const { createBlobClient } = await import('../blob-client');
+    const { createBlobClient } = await import('../../todo/blob-client');
     const blobClient = createBlobClient('https://storageaccount.blob.core.windows.net/container/file.csv');
     expect(blobClient).toBeInstanceOf(BlobClient);
   });
